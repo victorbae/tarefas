@@ -14,7 +14,9 @@ class App {
   }
 
   database() {
-    mongoose.connect(db.uri, { useNewUrlParser: true });
+    mongoose.connect(db.uri, { useNewUrlParser: true })
+    .then(() => console.log('Connected Successfully MongoDB ...'))
+    .catch(err => console.error('Could not connect to MongoDB:‌', err));
   }
 
   middlewares() {

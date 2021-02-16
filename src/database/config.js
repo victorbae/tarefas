@@ -1,3 +1,3 @@
 module.exports = {
-    uri: "mongodb://localhost:27017/tarefas"
+    uri: "mongodb://baesso:root@localhost:27017/tarefas?authSource=admin"
   };
